@@ -19,8 +19,8 @@ export default {
         }
     },
     mounted () {
-        this.swiper = new Swiper(".swiper-container", {
-            effect: "coverflow",
+        this.swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
             initialSlide: 1,
             centeredSlides: true,
             slidesPerView: 'auto',
@@ -44,13 +44,24 @@ export default {
         .swiper-wrapper{
             .swiper-slide{
                 width:70%;
-
-                border:1px solid blue;
+                box-sizing: content-box;
                 &.swiper-slide-prev{
                     opacity:0.5;
                 }
                 &.swiper-slide-next{
                     opacity:0.3;
+                }
+                &:nth-child(1){
+                    background-color:aqua
+                }
+                &:nth-child(2){
+                    background-color:red
+                }
+                &:nth-child(3){
+                    background-color:blue
+                }
+                &:nth-child(4){
+                    background-color:green
                 }
             }
         }
