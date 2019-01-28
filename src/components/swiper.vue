@@ -26,9 +26,9 @@ export default {
             slidesPerView: 'auto',
             coverflowEffect: {
                 rotate: 0,
-                stretch: 20,
-                depth: 100,
-                modifier: 0,
+                stretch: -20,
+                depth: 0,
+                modifier: 1,
                 slideShadows: false
             }
         })
@@ -43,7 +43,7 @@ export default {
         border:1px solid red;
         .swiper-wrapper{
             .swiper-slide{
-                width:66%;
+                width:70%;
 
                 border:1px solid blue;
                 &.swiper-slide-prev{

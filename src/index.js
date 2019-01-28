@@ -48,7 +48,7 @@ class Test {
 };
 var t1 = new Test();
 console.log(t1);
-console.log(t1.print('!!!!'));
+console.log(t1.print('!!!!!!'));
 if (module.hot) {
-    module.accept();
+    module.hot.accept();
 }
