@@ -1,0 +1,32 @@
+{
+    "root":true,
+    "env":{
+        "browser":true,
+        "node":true,
+        "es6":true
+    },
+    "parser":"babel-eslint",
+    "parserOptions":{
+        "sourceType": "module"
+    },
+    "plugins":[
+        "html"
+    ],
+    "settings": {
+        "html/html-extensions": [".html", ".vue"],
+        "html/indent":"+2"
+    },
+    "extends":"standard",
+    "rules":{
+        "eol-last":"off",
+        "handle-callback-err":"off",
+        "no-multiple-empty-lines":"off",
+        "no-unused-vars":"off",
+        "indent":"off",
+        "semi":"off",
+        "key-spacing":"warn",
+        "space-before-blocks":"warn",
+        "quotes":"warn",
+        "spaced-comment":"off"
+    }
+}
